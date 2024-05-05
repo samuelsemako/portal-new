@@ -258,8 +258,46 @@ body{
    background: #0bb457;
    width: 58%;
    border-radius: 7px;
+   padding:10px 20px;
+   min-height: 200px;
  }
 
+
+ .recommended-lesson-div .recomended-div .headline{
+   display: flex;
+ }
+
+ .recommended-lesson-div .recomended-div .headline .left-div{
+   width: 50%;
+ }
+
+ .recommended-lesson-div .recomended-div .headline .right-div{
+   width: 50%;
+ }
+
+ .recommended-lesson-div .recomended-div .headline .right-div span{
+   float: right;
+   margin-top: 20px;
+   color: #9410eb;
+ }
+
+ .recommended-lesson-div .recomended-div .headline .right-div span:hover{
+   cursor: pointer;
+ }
+
+ .rec-cont-div .image-div{
+   width: 200px;
+   height: 100px;
+   border-radius: 10px;
+ }
+
+ .rec-cont-div .image-div img{
+   width: 200px;
+   height: 100px;
+   border-radius: 10px;
+   
+ }
+ 
  
 
 
@@ -286,5 +324,6 @@ body{
    background: #44524a;
    width: 40%;
    border-radius: 7px;
+   padding:10px 20px;
  }
 

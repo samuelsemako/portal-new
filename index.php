@@ -109,13 +109,28 @@
                 <div class="recommended-lesson-div">
                     <div class="recomended-div">
                         <div class="headline">
-                            <h4>Recommended</h4>
-                            <span>See all <i class="bi bi-arrow-right"></i></span>
+                            <div class="left-div">
+                                <h4>Recommended</h4>
+                            </div>
+
+                            <div class="right-div">
+                                <span>See all <i class="bi bi-arrow-right"></i></span>
+                            </div>
+                            
                         </div>
 
                         <div class="rec-cont-div">
                             <div class="image-div">
-                                
+                                <img src="all-images/teacher.jpg" alt="">
+                            </div>
+
+
+
+                            <div class="bottom-text-div">
+                                <div class="dev-time-div">
+                                    <span>Development</span>
+                                    <span class="right"><i class="bi bi-clock clock"></i> 45min</span>
+                                </div>
                             </div>
                         </div>
                     </div>
