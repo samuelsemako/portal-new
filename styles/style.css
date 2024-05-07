@@ -2,166 +2,228 @@ body{
 	margin: 0px;
 	padding: 0px;
 	font-family: Poppins, Sans-serif;;
-	background-color: #ffffff;
-	background-size: cover;
+	background-color: #fff;
 }
 
-.body-div{
-    width: 100%;
-    height: 100%;
-    
-}
-
-
-.body-div-in{
-    width: 100%;
-    background: #ab71bdde;
-    height: 100%;
-       
-
+.only-name-menu{
+  display: none;
 }
 
 .side-bar-div{
-    width: 180px;
-    background-color: #ffffff;
+    width: 220px;
+    background-color: #fff;
     height: 100%;
-    float: left;
+    float: left;   
     position: fixed;
+    max-width: 1200px;
 }
 
-.name-div{
-    width: 85%;
-    margin: auto;
+
+.side-bar-div .div-in{
+  padding: 30px;
+}
+
+.side-bar-div .div-in .top-back-div{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-bottom: #e3e3e3 1px solid;
+  padding-bottom: 20px;
+  color: #939393;
+}
+
+
+.side-bar-div .div-in .top-back-div .name{
     display: flex;
-    flex-direction: column;
-    height: 100px;
-    border-bottom: #f1f1f1 2px solid;
+    justify-content: space-between;
 }
 
-
-.name-div .name{
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-}
-
-.name-div h1{
-    font-family: Century Gothic;
-    font-size: 16px;
+.side-bar-div .div-in .top-back-div .name h1{
+   padding: 0px;
+   margin: 0px;
+  font-family: Century Gothic;
+  font-size: 16px;
+  color: #3d3c3c;
 
 }
 
-.name-div .name i{
-    margin-top: 15px;
-    color: #f7eafcf1;
-    font-size: 18px;
+.side-bar-div .div-in .top-back-div .name i{
+  font-size: 23px;
+  color: #b9b9b9;
 }
 
 
-.search-div{
-    display: flex;
-    gap: 10px;
-    font-size: 14px;
-    color: #8d8a8a;
-    margin-top: 20px;
+.side-bar-div .div-in .top-back-div .search-div{
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  font-size: 13px;
+}
+
+.side-bar-div .div-in .top-back-div .search-div i{
+  font-size: 13px;
 }
 
 
 
 
+.side-bar-div .div-in .menu-list ul{
+  padding: 0px;
+  margin: 0px;
+}
 
 
-.menu-list ul li{
+.side-bar-div .div-in .menu-list ul li{
     list-style: none;
-    padding: 10px 0px;
+    padding: 15px 0px;
     color: #8d8a8a;
     font-size: 14px;
 }
 
 
-.menu-list ul li:hover{
+.side-bar-div .div-in .menu-list ul li:hover{
     color: #9410eb;
     cursor: pointer;
  }
 
- .menu-list ul li i{
+ .side-bar-div .div-in .menu-list ul li i{
     margin-right: 15px;
  }
 
 
 
+
+ /* Mobile view for side bar */
+
+ @media all and (max-width:963px){
+	.side-bar-div{
+    display: none;
+  }
+
+}
+
+
+
+
+
+
+
  .body-content-div{
     width: calc(100% - 220px);
-    background: #f1eef3c9;
-    min-height: 400px;
-    padding: 10px;
+    background: #f7f7f7;
     float: right;
-    
- }
-
-
- .body-content-div .header{
-    width: 100%;
     display: flex;
+    flex-direction: column;
+   align-items: center;
+    padding-bottom: 70px;
+    gap: 15px;
+    max-width: 1200px;
  }
 
- .body-content-div .header .left{
+ .body-content-div .content-div-in{
+  padding: 0px 50px 20px 50px;
+}
+
+.body-content-div .header{
+    width: calc(100% - 320px);
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+    background: #f7f7f7;
+    max-width: 1200px;
+ }
+
+ .body-content-div .header .text-div{
+  width: 50%;
+  float: left;
+}
+
+.body-content-div .header .text-div h3{
     width: 50%;
-    margin-top: -18px;
+    
  }
 
  .body-content-div .header .right{
     width: 50%;
-    
- }
-
- .body-content-div .header .right .right-in{
-    float: right;
     display: flex;
-    gap: 10px;
-    
+    float: right;
+    justify-content: end;
+    gap: 3px;
+    margin-top: 15px;
  }
 
- .body-content-div .header .right .right-in i{
+
+ .body-content-div .header .right i{
     margin-top: 10px;
     font-size: 18px;
-    color: #c1bbc3;
+    color: #8c8a8c;
  }
 
  
- .profile{
+ .body-content-div .header .right .profile{
     display: flex;
-    background: #fcefffde;
+    background: #b2afb3de;
     border-radius: 20px;
-    padding: 2px;
+    padding: 3px;
+    width: 120px;
  }
 
- .profile .image-div{
+ .body-content-div  .header .right .profile .image-div{
     width: 30px;
     height: 30px;
     border-radius: 50px;
     margin-right: 10px;
  }
 
- .profile .image-div img{
+ .body-content-div .header .right .profile .image-div img{
     width: 30px;
     height: 30px;
     border-radius: 50px;
 
  }
 
- .profile span{
+ .body-content-div .header .right .profile span{
     font-size: 15px;
     color: #5a5a5a;
  }
 
+ @media all and (max-width:963px){
+  .body-content-div{
+    width: 100%;
+  }
+
+  .body-content-div .header{
+    width: 90%;
+    margin: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+ .main-dashboard-div{
+  position: relative;
+  width:100%;
+  height: calc(100% - 70px);
+  top: 70px;
+  right: 0p;
+  left: 0px;
+  overflow: auto;
+}
  
 
  .achievement-div{
    width:100%;
    background: #fff;
    border-radius: 7px;
-   min-height: 80px;
+   min-height: 60px;
  }
 
  .achievement-div-in{
@@ -244,61 +306,112 @@ body{
 
 
  .recommended-lesson-div{
-   width:96%;
-   background: #fff;
+   width:100%;
    border-radius: 7px;
    min-height: 80px;
    margin-top: 20px;
    display: flex;
-   gap: 20px;
-   padding: 20px;
+   gap: 10px;
  }
 
  .recommended-lesson-div .recomended-div{
-   background: #0bb457;
-   width: 58%;
+   width: 64%;
    border-radius: 7px;
    padding:10px 20px;
-   min-height: 200px;
+   min-height: 100px;
+   background: #fff;
  }
 
 
  .recommended-lesson-div .recomended-div .headline{
-   display: flex;
+   width: 100%;
  }
 
- .recommended-lesson-div .recomended-div .headline .left-div{
-   width: 50%;
- }
+ .recommended-lesson-div .recomended-div .headline h4{
+  float: left;
+  margin-top: 0px;
+}
 
- .recommended-lesson-div .recomended-div .headline .right-div{
-   width: 50%;
- }
 
- .recommended-lesson-div .recomended-div .headline .right-div span{
+ .recommended-lesson-div .recomended-div .headline span{
    float: right;
-   margin-top: 20px;
    color: #9410eb;
  }
 
- .recommended-lesson-div .recomended-div .headline .right-div span:hover{
+ .recommended-lesson-div .recomended-div .headline span:hover{
    cursor: pointer;
  }
 
- .rec-cont-div .image-div{
-   width: 200px;
-   height: 100px;
-   border-radius: 10px;
+
+.rec-cont-div-all{
+  width: 100%;
+  min-height:200px;
+  display: flex;
+  gap: 40px;
+}
+
+ .rec-cont-div{
+  width: 45%;
+  min-height: 100px;
+  font-family: Arial, Helvetica, sans-serif;
  }
 
- .rec-cont-div .image-div img{
-   width: 200px;
+
+ .rec-cont-div .image-div{
+   width: 99%;
    height: 100px;
    border-radius: 10px;
-   
+   margin-bottom: 10px;
+   background-color: #fce09fe2;
+   padding: 10px;
+ }
+
+
+ .rec-cont-div .purple{
+    background-color:#dcb5e8db;
+ }
+
+
+ .rec-cont-div .image-div img{
+   width: 80%;
+   height: 100px;
+   border-radius: 10px;
+  margin-left: 30px;
+ }
+
+
+ .bottom-text-div {
+  width: 100%;
+  min-height: 20px;
+ }
+
+ .bottom-text-div .testify{
+  font-size: 12px;
+  color: #5a5a5a;
+ }
+  
+ 
+ .bottom-text-div .bottom-text-head-div{
+  width: 100%;
+  font-size: 12px;
+  color: #525151;
+  height: 10px;
+  margin-bottom: 15px;
  }
  
+ .bottom-text-div .bottom-text-head-div .dev{
+  float: left;
+ }
  
+ .bottom-text-div .bottom-text-head-div .right{
+  float: right;
+ }
+ 
+ .bottom-text-div .main{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 12px;
+ }
 
 
 
@@ -321,9 +434,170 @@ body{
 
 
  .recommended-lesson-div .lesson-div{
-   background: #44524a;
-   width: 40%;
+   width: 35%;
    border-radius: 7px;
-   padding:10px 20px;
+   padding:10px 10px;
+   background: #ffffff;
  }
 
+ .lesson-div .headline{
+  height: 40px;
+ }
+
+
+.lesson-div .headline h4{
+  float: left;
+  margin-top: 0px;
+ }
+
+.lesson-div .headline span{
+  float: right;
+  color: #9410eb;
+}
+
+.lesson-div-in{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.lesson-div-in .lesson-div-cont{
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  margin-bottom: 10px;
+  gap: 15px;
+}
+
+.lesson-div-in .lesson-div-cont .image-div{
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background:#e5d3f1 ;
+}
+
+.lesson-div-in .lesson-div-cont .image-div img{
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: #8d8a8a 1px solid;
+}
+
+.lesson-div-in .lesson-div-cont p{
+  width: 100%;
+  vertical-align: top;
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+.time-hour-div{
+  width: 100%;
+  min-height: 200px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.time-hour-div .timeline{
+  width: 25%;
+  min-height: 50px;
+  background:#ffffff;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.timeline .headline{
+  width: 100%;
+}
+
+.timeline .headline h4{
+  float: left;
+  margin-top: 0px;
+  font-size: 14px;
+}
+
+.timeline .headline span{
+  float: right;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+
+.timeline-in-div{
+  width: 90%;
+  margin: auto;
+  background: #ffbedfaf;
+  margin-top: 30px;
+  border-radius: 10px;
+  min-height: 50px;
+  display: flex;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.time-hour-div .timeline .blue{
+  background: #b8dcf9da;
+}
+
+
+.timeline-in-div .text-div{
+  width: 100%;
+  line-height: 25px;
+
+}
+
+.timeline-in-div .text-div span{
+  width: 100%;
+  float: left;
+  color: #5a5a5a;
+  font-size: 14px;
+}
+
+.timeline-in-div .text-div p{
+  font-size: 14px;
+}
+
+.timeline-in-div .image-div{
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+
+.timeline-in-div .image-div img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+
+
+.hour-div{
+  width: 73%;
+  background: #ffffff;
+  min-height: 50px;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.hour-div .headline{
+  font-size: 14px;
+
+}
+
+.hour-div .headline h4{
+  float: left;
+  margin-top: 0px;
+}
+
+.hour-div .headline span{
+  float: right;
+  color: #5a5a5a;
+}

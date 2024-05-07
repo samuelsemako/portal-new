@@ -14,5 +14,6 @@
 
 <script src="js/aos.js"></script>
 <script src="js/jquery-v3.6.1.min.js"></script>
+<script src="js/canvas-library.js"></script>
 
 <script src="js/superplaceholder.js"></script> 
