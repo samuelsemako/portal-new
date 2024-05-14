@@ -17,3 +17,8 @@
 <script src="js/canvas-library.js"></script>
 
 <script src="js/superplaceholder.js"></script> 
+
+
+<meta property="og:type" content="Website" />
+<meta property="og:site_name" content="Portal">
+<meta property="og:url" content="192.168.246.145z" />

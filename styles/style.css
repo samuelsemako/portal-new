@@ -5,9 +5,6 @@ body{
 	background-color: #fff;
 }
 
-.only-name-menu{
-  display: none;
-}
 
 .side-bar-div{
     width: 220px;
@@ -15,7 +12,6 @@ body{
     height: 100%;
     float: left;   
     position: fixed;
-    max-width: 1200px;
 }
 
 
@@ -116,8 +112,8 @@ body{
     flex-direction: column;
    align-items: center;
     padding-bottom: 70px;
-    gap: 15px;
-    max-width: 1200px;
+    /* gap: 15px; */
+    
  }
 
  .body-content-div .content-div-in{
@@ -126,20 +122,48 @@ body{
 
 .body-content-div .header{
     width: calc(100% - 320px);
-    height: 70px;
+    height: 40px;
     position: fixed;
     z-index: 100;
-    background: #f7f7f7;
+    background: #f7f6f6;
     max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
  }
 
  .body-content-div .header .text-div{
   width: 50%;
   float: left;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+}
+
+.body-content-div .header .text-div .menu-btn{
+  border: none;
+	width: 40px;
+	height: 40px;
+	font-size: 14px;
+	padding: 10px;
+	margin: 15px 0px 15px 10px;
+	background: none;
+	display: none;
+	border-radius: 4px;
+	cursor: pointer;
+	color: #414040;
+	background-color:#edd8fcf6;
+	border: none;
+}
+
+.body-content-div .header .text-div .menu-btn i{
+  font-size: 20px
 }
 
 .body-content-div .header .text-div h3{
     width: 50%;
+    font-size: 14px;
     
  }
 
@@ -154,7 +178,7 @@ body{
 
 
  .body-content-div .header .right i{
-    margin-top: 10px;
+    /* margin-top: 10px; */
     font-size: 18px;
     color: #8c8a8c;
  }
@@ -166,18 +190,22 @@ body{
     border-radius: 20px;
     padding: 3px;
     width: 120px;
+    margin-right: 15px;
+   height: 20px;
+   /* justify-content: center; */
+   align-items: center;
  }
 
  .body-content-div  .header .right .profile .image-div{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 50px;
     margin-right: 10px;
  }
 
  .body-content-div .header .right .profile .image-div img{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 50px;
 
  }
@@ -189,14 +217,26 @@ body{
 
  @media all and (max-width:963px){
   .body-content-div{
-    width: 100%;
+    width: 100%;   
+  }
+
+  .body-content-div .content-div-in{
+    padding: 20px;
   }
 
   .body-content-div .header{
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
+
+  .body-content-div .header .text-div .menu-btn{
+    display: block;
+  }
 }
+
+
+
+
 
 
 
@@ -212,7 +252,7 @@ body{
   position: relative;
   width:100%;
   height: calc(100% - 70px);
-  top: 70px;
+  top: 57px;
   right: 0p;
   left: 0px;
   overflow: auto;
@@ -223,7 +263,7 @@ body{
    width:100%;
    background: #fff;
    border-radius: 7px;
-   min-height: 60px;
+   min-height: 40px;
  }
 
  .achievement-div-in{
@@ -236,7 +276,7 @@ body{
  .achievement-div-in .achieve-cont-div{
    width: 22%;
    margin: auto;
-   margin-top: 10px;
+   /* margin-top: 10px; */
    display: flex;
    flex-wrap: wrap;
    text-align: center;
@@ -295,6 +335,29 @@ body{
 
 
 
+ /* Mobile for achievement */
+ @media all and (max-width:775px){
+  .achievement-div-in .achieve-cont-div{
+    width: 45%;
+    border-radius: 7px;
+    border: #b9b9b9 1px solid;
+    margin-bottom: 10px;
+    padding: 10px;
+    line-height: 30px;
+  }
+}
+
+@media all and (max-width:559px){
+  .achievement-div-in .achieve-cont-div{
+    width: 100%;
+    gap: 20px;
+  }
+
+  .achievement-div-in .achieve-cont-div .text-div{
+    display: flex;
+    gap: 20px;
+  }
+}
 
 
 
@@ -354,6 +417,7 @@ body{
   width: 45%;
   min-height: 100px;
   font-family: Arial, Helvetica, sans-serif;
+ 
  }
 
 
@@ -413,8 +477,29 @@ body{
     font-size: 12px;
  }
 
+/* Mobile for rec */
+
+ @media all and (max-width:775px){
+  .recommended-lesson-div{
+    flex-wrap: wrap;
+  }
+
+  .recommended-lesson-div .recomended-div{
+    width: 100%;
+
+  }
+}
 
 
+@media all and (max-width:550px){
+  .rec-cont-div-all{
+    flex-wrap: wrap;
+  }
+
+  .rec-cont-div{
+    width: 100%;
+  }
+}
 
 
 
@@ -491,7 +576,11 @@ body{
 }
 
 
-
+@media all and (max-width:775px){
+  .recommended-lesson-div .lesson-div{
+    width: 100%;
+  }
+}
 
 
 
@@ -501,7 +590,7 @@ body{
 
 .time-hour-div{
   width: 100%;
-  min-height: 200px;
+  min-height: 100px;
   margin-top: 10px;
   margin-bottom: 20px;
   display: flex;
@@ -600,4 +689,20 @@ body{
 .hour-div .headline span{
   float: right;
   color: #5a5a5a;
+}
+
+
+
+@media all and (max-width:775px){
+  .time-hour-div{
+    flex-wrap: wrap;
+  }
+
+  .time-hour-div .timeline{
+    width:100%
+  }
+
+  .hour-div{
+    width: 100%
+  }
 }

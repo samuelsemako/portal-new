@@ -5,9 +5,7 @@
 </head>
 <body>
  
-            <div class="only-name-menu">
-                <h1>ututorial</h1>
-            </div>
+
             <div class="side-bar-div">
                 <div class="div-in">
 
@@ -47,7 +45,8 @@
                     <div class="header">
 
                     <div class="text-div">
-                    <h3>Overview</h3>
+                        <button class="menu-btn" ><i class = "bi bi-list"></i></button>
+                        <h3 class= "main">Overview</h3>
                     </div>
                        
                        
@@ -185,7 +184,7 @@
                                             <img src="all-images/figma.jpg" alt="">
                                         </div>
                                         <div class="text-line">
-                                            <p>Let's create an e-commerce <br>website in figma or scetch</p>
+                                            <p>Let's create an e-commerce website in figma or scetch</p>
                                         </div>
                                     </div>
 
@@ -195,7 +194,7 @@
                                             <img src="all-images/gold.png" alt="">
                                         </div>
                                         <div class="text-line">
-                                            <p>Web Design Essentials: Creating <br>Marketing Homepages that drive Results</p>
+                                            <p>Web Design Essentials: Creating Marketing Homepages that drive Results</p>
                                         </div>
                                     </div>
 
@@ -205,7 +204,7 @@
                                             <img src="all-images/figma.jpg" alt="">
                                         </div>
                                         <div class="text-line">
-                                            <p>How to build a Designers Portfolio <br> Website on Wordpress within one day </p>
+                                            <p>How to build a Designers Portfolio Website on Wordpress within one day </p>
                                         </div>
                                     </div>
                                 </div>
